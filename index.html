@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top ">
+    <nav class="navbar navbar-expand-lg sticky-top position-relative ">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./imgs/logo.png" alt="">
@@ -20,6 +20,28 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
           </button>
+          <div class="toggle-menu position-absolute">
+           <div class="container">
+            <ul class="list-unstyled text-light">
+              <li class="nav-item">
+                <a class="nav-link active p-2 p-lg-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-2 p-lg-3" aria-current="page" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-2 p-lg-3" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-2 p-lg-3" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <a  class="btn  btn-main rounded-pill ps-4 pe-4"href="#">Login</a>
+           </div>
+          </div>
           <div class="collapse navbar-collapse" id="main">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -312,7 +334,7 @@
        <div class="footer pt-5 pb-5 text-center text-md-start">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-sm-12 col-lg-4 mt-sm-3 mt-lg-0">
               <div class="info">
                 <img class="img-fluid" src="./imgs/logo.png" alt="">
                 <p class="text-white-50 mt-3">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
@@ -322,7 +344,7 @@
                 <p>&copy;-2022<span> Bondi Inc</span></p>
               </div>
           </div>
-          <div class=" list col-md-6 col-lg-2">
+          <div class=" list col-4 col-lg-2 mt-5 mt-lg-0 text-start text-lg-center">
             <h5 class="text-light">Links</h5>
             <ul class=" list-unstyled lh-lg text-white-50">
               <li >Home</li>
@@ -333,7 +355,7 @@
               <li>Terms and Condition</li>
             </ul>
           </div>
-          <div class=" list col-md-6 col-lg-2">
+          <div class=" list col-4 col-lg-2 mt-5 mt-lg-0 text-start text-lg-center">
             <h5 class="text-light">About Us</h5>
             <ul class=" list-unstyled lh-lg text-white-50">
               <li>Sign In</li>
@@ -343,16 +365,16 @@
               <li>Contact Us</li>
             </ul>
           </div>
-          <div class=" contact col-md-6 col-lg-4 mt-sm-5 mt-md-0">
+          <div class=" contact col-4 col-lg-4 mt-5 mt-lg-0 text-start text-lg-center">
             <h5 class="text-light">Contact Us</h5>
             <p class="text-white-50 lh-lg">Get in touch with us via mail phone.We are waiting for your call or message</p>
             <div><a class="btn  btn-main rounded-pill ps-4 pe-4 w-100 mt-3"href="#">graphberry</a></div>
             <div class="socials mt-3">
               <ul class="d-flex align-items-center justify-content-sm-center justify-content-md-start gap-3 text-light list-unstyled">
-                <li><i class="fa-brands fa-facebook facebook rounded-circle p-2"></i></li>
-                <li><i class="fa-brands fa-twitter twitter rounded-circle p-2"></i></li>
-                <li><i class="fa-brands fa-linkedin linkedin rounded-circle p-2"></i></li>
-                <li><i class="fa-brands fa-youtube youtube rounded-circle p-2"></i></li>
+                <li><i class="fa-brands fa-facebook facebook rounded-circle p-1 p-sm-2"></i></li>
+                <li><i class="fa-brands fa-twitter twitter rounded-circle  p-1 p-sm-2"></i></li>
+                <li><i class="fa-brands fa-linkedin linkedin rounded-circle  p-1 p-sm-2"></i></li>
+                <li><i class="fa-brands fa-youtube youtube rounded-circle  p-1 p-sm-2"></i></li>
               </ul>
             </div>
           </div>
@@ -361,5 +383,6 @@
        </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
